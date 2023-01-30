@@ -1,10 +1,9 @@
-# FTD2XX_NET.DLL
-FTDI have provided a managed .NET wrapper class for the FTD2XX DLL on the Windows platform.  The managed wrapper DLL (FTD2XX_NET.DLL) is provided as a free download with Intellisense documentation provided in the FTD2XX_NET.XML file – this is viewable in the Visual Studio Object Browser and also provides hints as the code is written.
+# FTD2XX.Net
+This package provides a managed .NET wrapper for the FTD2XX DLL on the Windows platform and is available [on NuGet](https://www.nuget.org/packages/FTD2XX.Net).
 
-# NOTE
-I did not create this code nor am I affiliated with FTDI. I downloaded the original code from FTDI and recompiled it and packaged for nuget for the following frameworks:
-- .Net Standard 2.0
-- .Net Standard 2.1
-- .Net Framework 4.5
+### Platform
+* Windows only (interacts with FTDI's [ftd2xx.dll](https://ftdichip.com/drivers/d2xx-drivers/))
+* Supports [.NET Core](https://learn.microsoft.com/en-us/dotnet/standard/net-standard) and [.NET Framework](https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-framework) (4.5 and newer)
 
-The original code can be found on the [FTDI website](https://ftdichip.com/software-examples/code-examples/csharp-examples/).
+### Author
+I did not create this code nor am I affiliated with FTDI. The original code can be found on the [FTDI website](https://ftdichip.com/software-examples/code-examples/csharp-examples/).

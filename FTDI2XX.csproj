@@ -2,36 +2,33 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;net45;netstandard2.0</TargetFrameworks>
-    <UserSecretsId>547d0f7c-cebb-4747-94a0-6d15cec0d0fb</UserSecretsId>
     <PackageId>FTD2XX.Net</PackageId>
-    <Version>1.2.1</Version>
-    <Description>FTDI have provided a managed .NET wrapper class for the FTD2XX DLL on the Windows platform.  The managed wrapper DLL (FTD2XX_NET.DLL) is provided as a free download with Intellisense documentation provided in the FTD2XX_NET.XML file - this is viewable in the Visual Studio Object Browser and also provides hints as the code is written.
-
-v1.21
-I have recompiled the v1.2.0 code to add the following framework options:
-- .Net Standard 2.0
-- .Net Standard 2.1
-- .Net Framework 4.5</Description>
-    <PackageProjectUrl>https://ftdichip.com/software-examples/code-examples/csharp-examples/</PackageProjectUrl>
-    <RepositoryUrl>https://ftdichip.com/wp-content/uploads/2021/06/FTD2XX_NET_SRC_v1.2.0.zip</RepositoryUrl>
+    <Version>1.2.2</Version>
+    <Description>A .NET wrapper for FTDI's FTD2XX series USB interface chips</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/OldNo7/FTDI2XX.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OldNo7/FTDI2XX.NET.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType> 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseFile>License.txt</PackageLicenseFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.1|AnyCPU'">
-    <DocumentationFile>D:\projects\FTDI\FTDI2XX\FTDI2XX.xml</DocumentationFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="FTDI2XX.xml" />
-    <None Include="License.txt">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <None Include="License.txt" Pack="true" PackagePath="\" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="FTDI2XX.xml" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

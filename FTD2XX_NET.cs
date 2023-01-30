@@ -27,9 +27,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
 using System.Threading;
-//using System.Windows.Forms;
 using System.IO;
 
+// This project cannot build in debug mode because it requires
+// System.Windows.Forms which is not supported in .NET Standard.
+#if DEBUG
+#error This package can only be built in Release mode
+#endif
 
 namespace FTD2XX_NET
 {
