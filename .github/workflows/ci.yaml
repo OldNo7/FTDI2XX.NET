@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    name: Build
+    steps:
+      - name: 🛒 Checkout
+        uses: actions/checkout@v3
+      - name: 🐢 Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.1
+      - name: ✨ Setup .NET 6.0
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: "6.0.x"
+      - name: 🛠️ Build
+        run: dotnet build --configuration Release
+      - name: 📦 Pack
+        run: dotnet pack --configuration Release
