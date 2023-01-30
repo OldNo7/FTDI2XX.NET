@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;net45;netstandard2.0</TargetFrameworks>
-    <UserSecretsId>547d0f7c-cebb-4747-94a0-6d15cec0d0fb</UserSecretsId>
     <PackageId>FTD2XX.Net</PackageId>
     <Version>1.2.1</Version>
     <Description>FTDI have provided a managed .NET wrapper class for the FTD2XX DLL on the Windows platform.  The managed wrapper DLL (FTD2XX_NET.DLL) is provided as a free download with Intellisense documentation provided in the FTD2XX_NET.XML file - this is viewable in the Visual Studio Object Browser and also provides hints as the code is written.
