@@ -7,7 +7,8 @@
     <Description>A .NET wrapper for FTDI's FTD2XX series USB interface chips</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/OldNo7/FTDI2XX.NET</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/OldNo7/FTDI2XX.NET</RepositoryUrl>
+    <RepositoryUrl>https://github.com/OldNo7/FTDI2XX.NET.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType> 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <IncludeSymbols>true</IncludeSymbols>
