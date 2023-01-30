@@ -14,7 +14,7 @@ I have recompiled the v1.2.0 code to add the following framework options:
     <PackageProjectUrl>https://ftdichip.com/software-examples/code-examples/csharp-examples/</PackageProjectUrl>
     <RepositoryUrl>https://ftdichip.com/wp-content/uploads/2021/06/FTD2XX_NET_SRC_v1.2.0.zip</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.1|AnyCPU'">
