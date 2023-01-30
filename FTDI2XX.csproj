@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/OldNo7/FTDI2XX.NET</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
 
   <ItemGroup>
